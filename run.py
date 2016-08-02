@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 # import flask module
-from flask import Flask, render_template, redirect
+from flask import Flask, render_template, request, url_for
 
 
 # create a Flask Constructor
@@ -10,13 +10,13 @@ app = Flask(__name__)
 
 # Create a route using python decorators
 @app.route('/')
-def home():
-    return "This is home!"
+def index():
+    return render_template('index.html')
 
 
-@app.route('/template')
-def temp():
-    return render_template('template.html')
+@app.route('/showSignUp')
+def showSignUp():
+    return render_template('signup.html')
 
 
 if __name__ == "__main__":
