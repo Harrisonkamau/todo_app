@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Todo App</title>
+
+
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation" class="active"><a href="#">Home</a>
+                    </li>
+                    <li role="presentation"><a href="#">Sign In</a>
+                    </li>
+                    <li role="presentation"><a href="showSignUp">Sign Up</a>
+                    </li>
+                </ul>
+            </nav>
+            <h3 class="text-muted">Todo App</h3>
+        </div>
+
+        <div class="jumbotron">
+            <h1>Todo App</h1>
+            <p class="lead"></p>
+            <p><a class="btn btn-lg btn-success" href="showSignUp" role="button">Sign up today</a>
+            </p>
+        </div>
+
+        <div class="row marketing" style="font-family: 'Raleway', sans-serif;">
+            <div class="col-lg-6">
+                <h4><strong>Flask</strong></h4>
+                <p>Build a real-time web app using Flask</p>
+
+                <h4><strong>Console App</strong></h4>
+                <p>Build a console app that creates pairs of SSH keys</p>
+
+                <h4><strong>Data Encryption App</strong></h4>
+                <p>Build an to encrypt and decrypt data</p>
+
+                <h4>Server App</h4>
+                <p>Build a server app for HTTPS</p>
+            </div>
+
+            <div class="col-lg-6">
+                <h4><strong>Python Module</strong></h4>
+                <p>Create a maths module that calculates a factorial of an array of numbers.</p>
+
+                <h4><strong>Spy App</strong></h4>
+                <p>Build a spy app that saves WiFi passwords. The app should also crack linux's passwords.</p>
+
+                <h4><strong>Notification App</strong></h4>
+                <p>Use Twitter API to create an app that notifies me of new followers and selected news forum</p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; Harrison - Moringa School 2016</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>
